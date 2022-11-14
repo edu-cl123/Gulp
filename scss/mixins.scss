@@ -1,0 +1,19 @@
+/// 
+/// @output COlocamos los margenes a 0
+@mixin reset{
+    p,h1,h2,h3,h4,h5,h6{
+        margin: 0;
+    }
+}
+
+/// 
+/// @param {type} $mag_top -Px que vamos ha utilizra para margen
+/// @param {type} $mag_btt -Px que vamos ha utilizra para margen
+/// @param {type} $size -Tamaño que vamos a utilizar total de la pagina
+/// @output -
+@mixin centrado($mag_top, $mag_btt, $size){
+    margin-top: $mag_top;
+    margin-bottom: $mag_btt;
+    height: $size;
+    width: $size;
+}

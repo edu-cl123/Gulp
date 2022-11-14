@@ -1,0 +1,73 @@
+@import 'function.scss';
+@import 'var.scss';
+@import 'mixins.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    @include reset();
+    @include centrado(3px,3px,100vw);
+    background: rgb(199, 199, 199);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #222;
+    font-size: 13px;
+}
+
+.container {
+    max-width: 700px;
+    background: rgb(227, 227, 227);
+    margin: 0px auto 0px;
+    box-shadow: 1px 1px 2px #DAD7D7;
+    border-radius: 3px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.full-name {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+s .email,
+.phone {
+    color: rgb(10, 0, 0);
+    font-weight: 300;
+}
+
+.separator {
+    height: 10px;
+    display: inline-block;
+    border-left: 2px solid #999;
+    margin: 0px 10px;
+}
+
+.position {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+hr {
+    border-top: 1px solid #020202;
+}
+
+//Declaramos los estilo que vamos a utilizar para la creacion de los titulos
+@for $i from 1 through 4 {
+    .section-title-#{$i} {
+        color: colorSectionTitle($i);
+        font-weight: bold;
+    }
+}

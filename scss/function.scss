@@ -1,0 +1,9 @@
+@import 'var.scss';
+
+/// 
+/// @param {type} $num -Numero para posicion de array
+/// @return {type} -Elemento que se encuentre dentro de arr
+@function colorSectionTitle($num) {
+    @return nth($color_title, $num);
+  }
+

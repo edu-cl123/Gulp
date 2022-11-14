@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  height: 100vw;
+  width: 100vw;
+  background: rgb(199, 199, 199);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 13px;
+}
+
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin: 0;
+}
+
+.container {
+  max-width: 700px;
+  background: rgb(227, 227, 227);
+  margin: 0px auto 0px;
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.full-name {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+s .email,
+.phone {
+  color: rgb(10, 0, 0);
+  font-weight: 300;
+}
+
+.separator {
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #999;
+  margin: 0px 10px;
+}
+
+.position {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+hr {
+  border-top: 1px solid #020202;
+}
+
+.section-title-1 {
+  color: red;
+  font-weight: bold;
+}
+
+.section-title-2 {
+  color: blue;
+  font-weight: bold;
+}
+
+.section-title-3 {
+  color: green;
+  font-weight: bold;
+}
+
+.section-title-4 {
+  color: brown;
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section:last-of-type {
+  margin-bottom: 0px;
+}
+
+.section__list-item {
+  margin-bottom: 40px;
+}
+
+.section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.left,
+.right {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.right2 {
+  vertical-align: top;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 39%;
+}
+
+.name {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.skills__item {
+  margin-bottom: 10px;
+}
+
+.skills__item .right input {
+  display: none;
+}
+
+.skills__item .right label {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background: #C3DEF3;
+  margin-right: 3px;
+}
+
+.skills__item .right input:checked+label {
+  background: #79A9CE;
+}
+
+/* From uiverse.io by @aasisodiya */
+/* The switch - the box around the slider */
+.switch {
+  margin-top: 30px;
+
+  font-size: 1rem;
+  position: relative;
+  display: inline-block;
+  width: 4em;
+  height: 2em;
+ }
+ 
+ /* Hide default HTML checkbox */
+ .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+ }
+ 
+ /* The slider */
+ .slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #eee;
+  transition: 0.4s;
+  border-radius: 0.5em;
+  box-shadow: 0 0.2em #dfd9d9;
+ }
+ 
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.4em;
+  border-radius: 0.3em;
+  left: 0.3em;
+  bottom: 0.7em;
+  background-color: lightsalmon;
+  transition: 0.4s;
+  box-shadow: 0 0.4em #bcb4b4;
+ }
+ 
+ .slider:hover::before {
+  box-shadow: 0 0.2em #bcb4b4;
+  bottom: 0.5em;
+ }
+ 
+ input:checked+.slider:before {
+  transform: translateX(2em);
+  background: rgb(81, 44, 244);
+ }
